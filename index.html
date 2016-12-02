@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="image/dota2-icon" >
+	<title>Dota2</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"><img src="image/logo.png" id="logo"></a>
+	    </div>
+	    
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+
+	    <div id="navbar" class="collapse navbar-collapse">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">GAMEPLAY</a></li>
+	        <li><a href="#">UPDATES</a></li>
+	        <li><a href="#">HEROPEDIA</a></li>
+	        <li><a href="#">TEAMS</a></li>
+	        <li><a href="#">COMMUNITY</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav pull-right">
+	      	 <li>
+                <a href="#" data-toggle='modal' data-target='#loginModel' class="btn btn-social-icon btn-lg" id="steam-btn"><i class="fa fa-steam-square" aria-hidden="true"></i></a>
+             </li>             
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<!-- MODAL -->
+	<div id="loginModel" class="modal fade" role='dialog'>
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header primary">
+					<button type="button" class="close" data-dismiss='modal'>&times;</button>
+                    <h4 class="modal-title">LOGIN</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+                        <div class="form-group">
+                        	<label class="col-sm-4">
+                        		<h4 align="center">Username</h4>
+                        	</label>
+                        	<div class="col-sm-8">
+                            <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        	<label class="col-sm-4">
+                        		<h4 align="center">Password</h4>
+                        	</label>
+                        	<div class="col-sm-8">
+                            <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group checkbox ">
+                        	<div class="col-sm-offset-4 col-sm-4">
+                            	<label>
+                                	<input type="checkbox">Remember me
+                            	</label>
+                        	</div>
+                        </div>	
+                        <div class="form-group">
+                        	<div class="col-sm-offset-4 col-sm-8">	
+                            	<button type="submit" class="btn btn-info btn-sm">Sign In</button>
+                            	<span> or </span>
+                            	<button type="submit" class="btn">Login with <span><i class="fa fa-steam-square fa-lg" aria-hidden="true"></i></span></button>
+                            </div>
+                        </div>
+                    </form>   
+				</div>
+			</div>
+		</div>		
+	</div>
+</header>
+	<!-- MODAL END -->	
+	<div class="container">
+		<!-- Carousel Beginning -->
+		<div class="row carousel-content">
+				<div class="carousel slide" id="mycarousel" data-ride='carousel'>
+            <!--Indicators-->
+		        	<ol class="carousel-indicators">
+		                <li data-target="mycarousel" data-slide-to="0" class="active"></li>
+		                <li data-target="mycarousel" data-slide-to="1"></li>
+		                <li data-target="mycarousel" data-slide-to='2'></li>
+		                <li data-target="mycarousel" data-slide-to='3'></li>
+		                <li data-target="mycarousel" data-slide-to='4'></li>
+		            </ol>
+		            <div class="carousel-inner" role="listbox">
+		            	<div class="item active">
+		            		<img src="image/invoker.jpg" class="img-responsive">
+		            	</div>
+		            	<div class="item">
+		            		<img src="image/queen.jpg" class="img-responsive">
+		            	</div>
+		            	<div class="item">
+		            		<img src="image/earth.jpg" class="img-responsive">
+		            	</div>
+		            	<div class="item">
+		            		<img src="image/tidehunter.jpg" class="img-responsive">
+		            	</div>
+		            	<div class="item">
+		            		<img src="image/void.jpg" class="img-responsive">
+		            	</div>
+					</div>
+					<!--controls-->
+                    <a href="#mycarousel" class="left carousel-control" role='button' data-slide='prev'>
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden='true'></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#mycarousel" class="right carousel-control" role='button' data-slide='next'>
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden='true'></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+			</div>
+		</div>
+	</div><!-- Carousel Ends -->
+	<!-- Content BLocks -->
+	<div class="container">
+		<div class="row row-content">
+			<div class="row-boxes">
+				<div class="col-sm-4">
+					<a href="#"><dir id="gameplay"><span>GAMEPLAY</span></dir></a>
+				</div>
+				<div class="col-sm-4">
+					<a href="#"><dir id="update"><span>UPDATES</span></dir></a>
+				</div>
+				<div class="col-sm-4">
+					<a href="#"><dir id="hero"><span>HEROPEDIA</span></dir></a>
+				</div>
+				<div class="col-sm-4">
+					<a href="#"><dir id="item"><span>ITEMS</span></dir></a>
+				</div>
+				<div class="col-sm-4">
+					<a href="#"><dir id="team"><span>TEAMS</span></dir></a>
+				</div>
+				<div class="col-sm-4">
+					<a href="#"><dir id="community"><span>COMMUNITY</span></dir></a>
+				</div>			
+			</div>
+		</div>
+		<hr>
+	</div>	
+	<!-- Content BLocks Ends-->
+	<!-- Gameplay Starts -->
+	<div class="container">
+		<div class="row row-content">
+			<div class="title-header">
+					<h1>Defence Of The Ancients 2</h1>
+			</div>
+			<div class="col-xs-12 col-sm-12 gameplay-content">				
+				<div class="col-sm-7">
+					<p>
+						Dota 2 is a multiplayer online battle arena (MOBA) video game in which two teams of five players compete to collectively destroy a large structure defended by the opposing team known as the "Ancient", whilst defending their own. As in Defense of the Ancients, the game is controlled using standard real-time strategy controls, and is presented on a single map in a three-dimensional isometric perspective. Ten players each control one of the game's 112 playable characters, known as "heroes", with each having their own design, benefits, and weaknesses. Heroes are divided into two primary roles, known as the "carry" and "support". Carries begin each match as weak and vulnerable, but rapidly become more powerful during the game, thus becoming able to "carry" their team to victory. Supports generally lack abilities that deal heavy damage, instead having ones with more functionality and utility that provide assistance for their carries.
+					</p>
+					<p>
+						All heroes have a basic damage-dealing attack, in addition to powerful hero-specific abilities. Each hero has at least four abilities, and these are the primary method of fighting. The most powerful ability for each hero is known as their "ultimate", which requires them to have an experience level of six in order to learn and use. In order to prevent abilities from being spammed without consequence, a magic system in the game exists. Activating an ability costs a hero some of their "mana points", which regenerate slowly over time. Using an ability will also cause it to enter a cooldown phase, in which the ability can not be used again until a timer counts down to zero. All heroes have three attributes: strength, intelligence, and agility, which affect health points, mana points, and attack speed, respectively. Each hero has one primary attribute, which influences non-ability damage. Heroes begin each game with an experience level of one, only having access to one of their abilities, but are able to level up and become more powerful during the course of the game. Whenever a hero gains an experience level, the player is able to unlock another of their abilities or improve one already learned. If a hero runs out of health points and dies, a timer begins to count down until they respawn in their base.
+					</p>
+					<p>
+						The two teams—known as the Radiant and Dire—occupy fortified bases in opposite corners of the map, which is divided in half by a crossable river and connected by three paths, where are referred to as "lanes". The lanes are guarded by defensive towers that slowly, but frequently, attack any opposing unit who gets within its line of sight. Weak computer-controlled creatures called "creeps" travel predefined paths along the lanes and attempt to attack any opposing heroes, creeps, and buildings in their way. Creeps periodically spawn throughout the game in groups from two buildings, called the "barracks", that exist in each lane and are located within the team's bases. The map is also permanently covered for both teams in fog of war, which prevents a team from seeing the opposing team's heroes and creeps if they are not directly in sight of an allied unit. The map also features a day-night cycle, with some features and mechanics being altered depending on the time of cycle.
+					</p>
+				</div>
+				<!-- Table-->
+				<div class="col-sm-5">
+					<div>
+						<a href="#"><img src="image/DotA2.jpg" class="img-responsive"></a>
+					</div>
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Developer(s) &amp; Publisher(s)</th>
+								<td>Valve Corporation</td>
+							</tr>
+							<tr>
+								<th>Producer(s)</th>
+								<td>Erik Johnson</td>
+							</tr>
+							<tr>
+								<th>Designer(s)</th>
+								<td>Icefrog</td>
+							</tr>
+							<tr>
+								<th>Writer(s)</th>
+								<td>Marc Laidlaw, Ted Kosmatka &amp; Kris Katz</td>
+							</tr>
+							<tr>
+								<th>Composer(s)</th>
+								<td>Jason Hayes &amp; Tim Larkin</td>
+							</tr>
+							<tr>
+								<th>Engine</th>
+								<td>Source 2</td>
+							</tr>
+							<tr>
+								<th>Platform(s)</th>
+								<td>Microsoft Windows, OS &amp; Linux</td>
+							</tr>
+							<tr>
+								<th>Release Date(s)</th>
+								<td>Microsoft Windows WW: July 9, 2013 OS X, Linux WW: July 18, 2013</td>
+							</tr>
+							<tr>
+								<th>Genre(s)</th>
+								<td>Multiplayer Online Battle Arena</td>
+							</tr>
+							<tr>
+								<th>Mode(s)</th>
+								<td>Single-Player, Multiplayer</td>
+							</tr>
+						</table>
+					</div>
+				</div><!--Table Ends -->				
+			</div><!-- GamePlay Ends -->
+			<!-- Updates - Accodian -->
+		</div>
+		<hr>	
+	</div>
+	<!-- Gameplay Ends-->
+	<!-- Heropedia Starts -->
+	<div class="container">
+		<div class="row row-content">
+			<div class="col-xs-12">
+			<div class="title-header">
+				<h1><i class="fa fa-qq fa-fw"></i>Heropedia</h1>
+			</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="heroIcon">
+					<h3><img src="image/strength.png"> Strength</h3>	
+						<div class="row" style="padding-left: 15px;">
+							<div class="radiant">
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/earthshaker_sb.png"><img class="image-off" src="image/earthshaker_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/sven_sb.png"><img class="image-off" src="image/sven_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/tiny_sb.png"><img class="image-off" src="image/tiny_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/kunkka_sb.png"><img class="image-off" src="image/kunkka_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/beastmaster_sb.png"><img class="image-off" src="image/beastmaster_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/dragon_knight_sb.png"><img class="image-off" src="image/dragon_knight_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/rattletrap_sb.png"><img class="image-off" src="image/rattletrap_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/omniknight_sb.png"><img class="image-off" src="image/omniknight_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/huskar_sb.png"><img class="image-off" src="image/huskar_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/alchemist_sb.png"><img class="image-off" src="image/alchemist_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/brewmaster_sb.png"><img class="image-off" src="image/brewmaster_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/treant_sb.png"><img class="image-off" src="image/treant_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/wisp_sb.png"><img class="image-off" src="image/wisp_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/centaur_sb.png"><img class="image-off" src="image/centaur_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/shredder_sb.png"><img class="image-off" src="image/shredder_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/bristleback_sb.png"><img class="image-off" src="image/bristleback_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/tusk_sb.png"><img class="image-off" src="image/tusk_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/elder_titan_sb.png"><img class="image-off" src="image/elder_titan_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/legion_commander_sb.png"><img class="image-off" src="image/legion_commander_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/earth_spirit_sb.png"><img class="image-off" src="image/earth_spirit_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/phoenix_sb.png"><img class="image-off" src="image/phoenix_hphover.png"></a>
+								</div>	
+							</div>
+						</div>	
+						<div class="row" style="padding-left: 15px;">
+							<div class="dire">
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/axe_sb.png"><img class="image-off" src="image/axe_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/pudge_sb.png"><img class="image-off" src="image/pudge_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/sand_king_sb.png"><img class="image-off" src="image/sand_king_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/slardar_sb.png"><img class="image-off" src="image/slardar_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/tidehunter_sb.png"><img class="image-off" src="image/tidehunter_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/skeleton_king_sb.png"><img class="image-off" src="image/skeleton_king_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/life_stealer_sb.png"><img class="image-off" src="image/life_stealer_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/night_stalker_sb.png"><img class="image-off" src="image/night_stalker_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/doom_bringer_sb.png"><img class="image-off" src="image/doom_bringer_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/spirit_breaker_sb.png"><img class="image-off" src="image/spirit_breaker_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/lycan_sb.png"><img class="image-off" src="image/lycan_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/chaos_knight_sb.png"><img class="image-off" src="image/chaos_knight_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/undying_sb.png"><img class="image-off" src="image/undying_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/magnataur_sb.png"><img class="image-off" src="image/magnataur_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/abaddon_sb.png"><img class="image-off" src="image/abaddon_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/abyssal_underlord_sb.png"><img class="image-off" src="image/abyssal_underlord_hphover.png"></a>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="heroIcon">
+					<h3><img src="image/agility.png"> Agility</h3>
+						<div class="row" style="padding-left: 15px;">
+							<div class="radiant">
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/antimage_sb.png"><img class="image-off" src="image/antimage_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/drow_ranger_sb.png"><img class="image-off" src="image/drow_ranger_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/juggernaut_sb.png"><img class="image-off" src="image/juggernaut_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/mirana_sb.png"><img class="image-off" src="image/mirana_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/morphling_sb.png"><img class="image-off" src="image/morphling_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/phantom_lancer_sb.png"><img class="image-off" src="image/phantom_lancer_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/vengefulspirit_sb.png"><img class="image-off" src="image/vengefulspirit_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/riki_sb.png"><img class="image-off" src="image/riki_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/sniper_sb.png"><img class="image-off" src="image/sniper_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/templar_assassin_sb.png"><img class="image-off" src="image/templar_assassin_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/luna_sb.png"><img class="image-off" src="image/luna_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/bounty_hunter_sb.png"><img class="image-off" src="image/bounty_hunter_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/ursa_sb.png"><img class="image-off" src="image/ursa_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/gyrocopter_sb.png"><img class="image-off" src="image/gyrocopter_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/lone_druid_sb.png"><img class="image-off" src="image/lone_druid_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/naga_siren_sb.png"><img class="image-off" src="image/naga_siren_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/troll_warlord_sb.png"><img class="image-off" src="image/troll_warlord_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-radiant" href="#"><img class="image-on" src="image/ember_spirit_sb.png"><img class="image-off" src="image/ember_spirit_hphover.png"></a>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="padding-left: 15px; padding-top: 33px">	
+							<div class="dire">
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/bloodseeker_sb.png"><img class="image-off" src="image/bloodseeker_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/nevermore_sb.png"><img class="image-off" src="image/nevermore_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/razor_sb.png"><img class="image-off" src="image/razor_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/venomancer_sb.png"><img class="image-off" src="image/venomancer_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/faceless_void_sb.png"><img class="image-off" src="image/faceless_void_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/phantom_assassin_sb.png"><img class="image-off" src="image/phantom_assassin_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/viper_sb.png"><img class="image-off" src="image/viper_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/clinkz_sb.png"><img class="image-off" src="image/clinkz_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/broodmother_sb.png"><img class="image-off" src="image/broodmother_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/weaver_sb.png"><img class="image-off" src="image/weaver_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/spectre_sb.png"><img class="image-off" src="image/spectre_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/meepo_sb.png"><img class="image-off" src="image/meepo_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/nyx_assassin_sb.png"><img class="image-off" src="image/nyx_assassin_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/slark_sb.png"><img class="image-off" src="image/slark_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/medusa_sb.png"><img class="image-off" src="image/medusa_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/terrorblade_sb.png"><img class="image-off" src="image/terrorblade_hphover.png"></a>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/arc_warden_sb.png"><img class="image-off" src="image/arc_Warden_hphover.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="heroIcon">
+					<h3><img src="image/intelli.png"> Intelligence</h3>
+					<div class="row" style="padding-left: 15px;">
+						<div class="radiant">
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/crystal_maiden_sb.png"><img class="image-off" src="image/crystal_maiden_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/puck_sb.png"><img class="image-off" src="image/puck_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/storm_spirit_sb.png"><img class="image-off" src="image/storm_spirit_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/windrunner_sb.png"><img class="image-off" src="image/windrunner_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/zuus_sb.png"><img class="image-off" src="image/zuus_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/lina_sb.png"><img class="image-off" src="image/lina_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/shadow_shaman_sb.png"><img class="image-off" src="image/shadow_shaman_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/tinker_sb.png"><img class="image-off" src="image/tinker_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/furion_sb.png"><img class="image-off" src="image/furion_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/enchantress_sb.png"><img class="image-off" src="image/enchantress_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/jakiro_sb.png"><img class="image-off" src="image/jakiro_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/chen_sb.png"><img class="image-off" src="image/chen_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/silencer_sb.png"><img class="image-off" src="image/silencer_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/ogre_magi_sb.png"><img class="image-off" src="image/ogre_magi_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/rubick_sb.png"><img class="image-off" src="image/rubick_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/disruptor_sb.png"><img class="image-off" src="image/disruptor_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/keeper_of_the_light_sb.png"><img class="image-off" src="image/keeper_of_the_light_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/skywrath_mage_sb.png"><img class="image-off" src="image/skywrath_mage_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/oracle_sb.png"><img class="image-off" src="image/oracle_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-radiant" href="#"><img class="image-on" src="image/techies_sb.png"><img class="image-off" src="image/techies_hphover.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding-left: 15px;">
+						<div class="dire">
+							<div class="col-sm-2 col-xs-2">
+								<a id="hero-dire" href="#"><img class="image-on" src="image/bane_sb.png"><img class="image-off" src="image/bane_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/lich_sb.png"><img class="image-off" src="image/lich_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/lion_sb.png"><img class="image-off" src="image/lion_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/witch_doctor_sb.png"><img class="image-off" src="image/witch_doctor_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/enigma_sb.png"><img class="image-off" src="image/enigma_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/necrolyte_sb.png"><img class="image-off" src="image/necrolyte_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/warlock_sb.png"><img class="image-off" src="image/warlock_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/queenofpain_sb.png"><img class="image-off" src="image/queenofpain_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/death_prophet_sb.png"><img class="image-off" src="image/death_prophet_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/pugna_sb.png"><img class="image-off" src="image/pugna_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/dazzle_sb.png"><img class="image-off" src="image/dazzle_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/leshrac_sb.png"><img class="image-off" src="image/leshrac_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/dark_seer_sb.png"><img class="image-off" src="image/dark_seer_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/batrider_sb.png"><img class="image-off" src="image/batrider_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/ancient_apparition_sb.png"><img class="image-off" src="image/ancient_apparition_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/invoker_sb.png"><img class="image-off" src="image/invoker_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/obsidian_destroyer_sb.png"><img class="image-off" src="image/obsidian_destroyer_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/shadow_demon_sb.png"><img class="image-off" src="image/shadow_demon_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/visage_sb.png"><img class="image-off" src="image/visage_hphover.png"></a>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+									<a id="hero-dire" href="#"><img class="image-on" src="image/winter_wyvern_sb.png"><img class="image-off" src="image/winter_wyvern_hphover.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>		
+	<!-- Heropedia ends -->	
+	<!-- Updates -->
+	<div class="container">
+		<div class="row row-content">
+			<div class="col-xs-12">
+				<div class="update-heading">
+				<h1><i class="fa fa-cogs fa-2x fa-fw"></i> Game Updates</h1>
+				</div>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="9nov">
+							<h3 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#november9" aria-expanded="true" aria-controls="november9">
+									Dota 2 Update - November 9th, 2016 
+								</a>
+							</h3>
+						</div>
+						<div role="tab-panel" class="panel-collapse collapse in" id="november9" aria-labelledby="9nov">
+							<div class="panel-body">
+								<ul>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed Morphling causing performance issues in bot games.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed bots not using the specified difficulty level.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed issue where some team emoticons weren’t working with :pro_team:</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed the interaction between Rubick’s Spell Steal, Treant Protector’s Eyes in the Forest and Techies’ Land Mines.</li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="7nov">
+							<h3 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#november7" aria-expanded="true" aria-controls="november7">
+									Dota 2 Update - November 7th, 2016 
+								</a>
+							</h3>
+						</div>
+						<div role="tab-panel" class="panel-collapse collapse" id="november7" aria-labelledby="9nov">
+							<div class="panel-body">
+								<ul>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Reports and Commends can now only be sent in the post-game screen.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed a problem with the attack-move command which sometimes caused more distant units to be targeted.</li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="4nov">
+							<h3 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#november4" aria-expanded="true" aria-controls="november4">
+									Dota 2 Update - November 4th, 2016 
+								</a>
+							</h3>
+						</div>
+						<div role="tab-panel" class="panel-collapse collapse " id="november4" aria-labelledby="4nov">
+							<div class="panel-body">
+								<ul>
+									<li><i class="fa fa-shield fa-rotate-270"></i> You can no longer random in the last 10 seconds in Unranked or in the final pick per team in Ranked.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Repicking in Unranked now behaves the same as Ranked, giving you a new random hero rather than letting you pick a hero directly.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> You will no longer have a chance of receiving the same hero after re-randoming.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Increased report sensitivity (making it more likely that a reported user will go into low priority).</li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="27oct">
+							<h3 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#october27" aria-expanded="true" aria-controls="october27">
+									Dota 2 Update - October 27th, 2016 
+								</a>
+							</h3>
+						</div>
+						<div role="tab-panel" class="panel-collapse collapse" id="october27" aria-labelledby="27oct">
+							<div class="panel-body">
+								<ul>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Added a dialog on startup to correct a common performance problem on Windows 10.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed a bug with Phantom Assassin's Manifold Paradox Coup de Grace effects during bot matches.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed the styling of the "Automatically choose cursor size" option.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed a bug with rewinding while spectating live games.</li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="24oct">
+							<h3 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#october24" aria-expanded="true" aria-controls="october24">
+									Dota 2 Update - October 24th, 2016 
+								</a>
+							</h3>
+						</div>
+						<div role="tab-panel" class="panel-collapse collapse" id="october24" aria-labelledby="24oct">
+							<div class="panel-body">
+								<ul>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed Shadow Demon being able to Demonic Purge dead units.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed Undying being able to Soul Rip dead Tombstones.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Added an option to hide the overhead status display.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> The overhead status display is now 10% smaller.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Fixed a bug where the overhead status display overlapped the hp bar for spectators in some cases.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Added an option to hide damage numbers.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Incoming damage numbers are not shown in some cases to avoid giving away information, for example during Necrophos' Heartstopper Aura when Necrophos is not visible, and during Ion Shell when the shell source is not visible.</li>
+									<li><i class="fa fa-shield fa-rotate-270"></i> Added a visually unique hp bar treatment for your hero.</li>
+								</ul>
+							</div>
+						</div>	
+					</div>					
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!-- Updates Ends -->
+	<!-- Footer -->
+	<footer class="row-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 col-xs-offset-1 col-sm-2 col-xs-offset-1">
+                    
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                	<p>Designed and Built by</p>
+                    <h3>Raj Bisht</h3>
+                    <address>	
+		              Bangalore<br>
+		              <i class="fa fa-phone"></i> Tel.: +91-8147669704<br>
+		              <i class="fa fa-envelope"></i> Email: <a href="mailto:raj.paulson@gmail.com">rajbisht0136@gmail.com</a>
+		           </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-github" href="http://github.com/"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <p align="center" style="padding-top: 30px;">&copy; Copyright 2016 @Whhymee</p>
+                </div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer ends-->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
